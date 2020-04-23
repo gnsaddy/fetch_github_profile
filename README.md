@@ -6,8 +6,20 @@ Progressive Web App build using vanilla js, HTML, bootstrap, css.
 
 Author - Aditya Raj
 ```
+# Getting Started
 <ul>
+<li><a href="#Software Required">Software Required</a> </li>
 <li><a href="#Installation">Installation</a> </li>
+<li><a href="#npm init">npm init</a> </li>
+<li><a href="#Install Modules with npm install">node modules</a> </li>
+<li><a href="#Run Application">Run Application</a> </li>
+<li><a href="#Github API">Github API</a> </li>
+<li><a href="#Returning Github user details in json">Github Data</a> </li>
+<li><a href="#Github user profile JSON formatted ">Github data formatted</a> </li>
+<li><a href="#Service worker static caching">Static caching</a> </li>
+<li><a href="#Service worker dynamic caching">Dynamic caching</a> </li>
+<li><a href="#Tools and technology used">Tools and Tech</a> </li>
+
 </ul>
 
 ## ```Software Required```
@@ -171,7 +183,7 @@ self.addEventListener('fetch', function (event) {
 
 
 ```
-## Service worker static caching
+## Service worker dynamic caching
 ```
 ----------------------------------------------------------------------------
 // self.addEventListener('fetch', (e) => {
@@ -209,7 +221,7 @@ self.addEventListener('fetch', function (event) {
 
 
 
-# Tools and technology used:
+# Tools and technology used
 ``` 
 1. HTML5
 2. CSS3

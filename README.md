@@ -5,8 +5,11 @@
 Progressive Web App build using vanilla js, HTML, bootstrap, css.
 
 Author - Aditya Raj
-
 ```
+<ul>
+<li><a href="#Installation">Installation</a> </li>
+</ul>
+
 ## ```Software Required```
 - Nodejs 
 - NPM

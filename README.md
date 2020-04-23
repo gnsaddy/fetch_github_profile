@@ -99,8 +99,15 @@ Once you run this, npm will begin the installation process of all of the current
 
 ## Github API
 ```API
-This describes the resources that make up the official GitHub REST API v3. Many of the resources on the users API provide a shortcut for getting information about the currently authenticated user. If a request URL does not include a :username parameter then the response will be for the logged in user (and you must pass authentication information with your request).The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It's designed to help you find the one result you're looking for (or maybe the few results you're looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that
-best meets your needs. To satisfy that need, the GitHub Search API provides up to 1,000 results for each search.
+This describes the resources that make up the official GitHub REST API v3. Many of the resources on the users 
+API provide a shortcut for getting information about the currently authenticated user. If a request URL does 
+not include a :username parameter then the response will be for the logged in user (and you must pass authentication
+information with your request).The Search API helps you search for the specific item you want to find. For example,
+you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google.
+It's designed to help you find the one result you're looking for (or maybe the few results you're looking for).
+Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the 
+item that best meets your needs. To satisfy that need, the GitHub Search API provides up to 1,000 results for 
+each search.
 ```
  ```Follow the official documentation ```
 ## Source: [Github User Documentation](https://developer.github.com/v3/users/)

@@ -178,7 +178,8 @@ self.addEventListener('install', (eve) => {
 			]);
 		})
 	);
-
+```
+<p>
 This event listener triggers when the service worker is first installed.
 NOTE:- Note: It is important to note that while this event is happening,
 any previous version of your service worker is still running and serving pages, so the things you do here must not disrupt that. For instance, this is not a good place to delete old caches, because the previous service worker may still be using them at this point.
@@ -186,8 +187,10 @@ any previous version of your service worker is still running and serving pages, 
 event.waitUntil extends the lifetime of the install event until the passed promise resolves successfully. If the promise rejects, the installation is considered a failure and this service worker is abandoned (if an older version is running, it stays active).
 
 cache.addAll will reject if any of the resources fail to cache. This means the service worker will only install if all of the resources in cache.addAll have been cached.
+</p>
 
-```
+#
+
 ## Source: [Service Worker Google Document](https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker)
 
 

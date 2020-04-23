@@ -144,6 +144,63 @@ fetch('https://api.github.com/users/<username>')
         .catch((err) => {
             console.log('error ', err);
         });
+```
+
+## Service worker static caching
+```
+
+--------------------------------------------------------------------------
+self.addEventListener('fetch', function (event) {
+	event.respondWith(
+		fetch(event.request).catch(function () {
+			return caches.match(event.request).then(function (response) {
+				if (response) {
+					return response;
+				} else if (event.request.headers.get('accept').includes('text/html')) {
+					return caches.match('./offline.html');
+				} else if (response.status == 404) {
+					return caches.match('./404.html');
+				}
+			});
+		})
+	);
+});
+
+
+```
+## Service worker static caching
+```
+----------------------------------------------------------------------------
+// self.addEventListener('fetch', (e) => {
+// 	e.respondWith(
+// 		caches
+// 			.match(e.request)
+// 			.then((r) => {
+// 				console.log('[Service Worker] Fetching resource: ' + e.request.url);
+// 				return (
+// 					r ||
+// 					fetch(e.request).then((response) => {
+// 						return caches.open('static-cache').then((cache) => {
+// 							console.log(
+// 								'[Service Worker] Caching new resource: ' + e.request.url
+// 							);
+// 							cache.put(e.request, response.clone()).then((r) => {
+// 								console.log('cloned done!!');
+// 							});
+// 							if (response.status == 404) {
+// 								return caches.match('./404.html');
+// 							}
+// 							return response;
+// 						});
+// 					})
+// 				);
+// 			})
+// 			.catch(() => {
+// 				return caches.match('./offline.html');
+// 			})
+// 	);
+// });
+
 
 ```
 

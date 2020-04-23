@@ -75,6 +75,11 @@ what you need to know to install a standalone module into the current directory:
 
 Once you run this, npm will begin the installation process of all of the current project's dependencies which you specified in package.json
 ```
+## Run Application
+
+```browser
+    $ node server.js
+```
 ## Source: [Install documentation](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 
 ## Github API
@@ -118,7 +123,7 @@ fetch('https://api.github.com/users/<username>')
 ```
 ## Github user profile JSON formatted 
 ```
-function fetchJSON() {
+
     fetch('https://api.github.com/users/gnsaddy')
         .then((response) => {
             return response.json();
@@ -139,14 +144,10 @@ function fetchJSON() {
         .catch((err) => {
             console.log('error ', err);
         });
-}
+
 ```
 
-## Open Chrome browser and run
 
-```browser
-    localhost:3000
-```
 
 # Tools and technology used:
 ``` 

@@ -181,6 +181,7 @@ self.addEventListener('install', (eve) => {
 ```
 <p>
 This event listener triggers when the service worker is first installed.
+
 NOTE:- Note: It is important to note that while this event is happening,
 any previous version of your service worker is still running and serving pages, so the things you do here must not disrupt that. For instance, this is not a good place to delete old caches, because the previous service worker may still be using them at this point.
 
